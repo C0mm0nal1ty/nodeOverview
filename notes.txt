@@ -44,7 +44,10 @@ The event loop controls what the thread should be doing at any given time.
 
 How to understand the event loop?
 Reference loop.js to understand the flow of steps
-
+1.Node runs a while loop with a condition based on 3 criteria:
+check for any pending functions, OS tasks pending, or OSoperations pending.
+2. if true, then it will run a loop to process pending timers,
+functions, OStasks, or OSoperations. At the end, it'll run cleanup code
 
 
 ----------------------------------------------------------
