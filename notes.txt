@@ -51,7 +51,9 @@ functions, OStasks, or OSoperations. At the end, it'll run cleanup code
 
 Is Node single-threaded?
 The Node event-loop IS SINGLE-THREADED.
-FUNCTIONS IN NODE ARE *NOT* SINGLE-THREADED. 
+FUNCTIONS IN NODE ARE *NOT* SINGLE-THREADED.
+Referencing threads.js, if node was single-threaded,
+the processing would be linear. 
 
 
 ----------------------------------------------------------
