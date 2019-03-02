@@ -53,7 +53,9 @@ Is Node single-threaded?
 The Node event-loop IS SINGLE-THREADED.
 FUNCTIONS IN NODE ARE *NOT* SINGLE-THREADED.
 Referencing threads.js, if node was single-threaded,
-the processing would be linear. 
+the processing would be linear. HOWEVER, both functions ran for the same amount of time.
+
+
 
 
 ----------------------------------------------------------
