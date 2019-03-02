@@ -9,11 +9,29 @@ libuv - 100% c++ code
 *Node provides a series of wrappers (standard library module)
 -> standard modules include http, fs, crypto, path
 
+pbkdf2 function
+-> hashing algorithm function
+
+----------------------------------------------------------
+How does a function get implemented?
+
+1. javascript code is written
+2. nodes javascript side library
+3. process.binding() connects js and c++ functions
+4. It goes to v8 engine
+5. nodes c++ side library uses the libuv library
+to get access to the underlying OS
+
+----------------------------------------------------------
+What is an event loop in Node JS?
 
 
+What is a thread?
 
+----------------------------------------------------------
 
-
+----------------------------------------------------------
+----------------------------------------------------------
 
 
 
