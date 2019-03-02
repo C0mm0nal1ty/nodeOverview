@@ -23,14 +23,34 @@ How does a function get implemented?
 to get access to the underlying OS
 
 ----------------------------------------------------------
-What is an event loop in Node JS?
-
-
 What is a thread?
+A process is an instance of a program being run.
+A thread is a todolist item/instructions that must be executed by the CPU.
+A single process can have multiple threads running.
+
+Scheduling - OS ability to process a thread at any given time.
+-> a PC as only so much RAM.
+
+How to solve the issue with resource management dedicated
+towards threads?
+a. use more cpus
+b. allow OS scheduler to detect pause I/O time, and process threads during
+this time
+
+----------------------------------------------------------
+What is an event loop in Node JS?
+Event loop is inside the 1 thread Node uses to run your program.
+The event loop controls what the thread should be doing at any given time.
+
+How to understand the event loop?
+
+
+
 
 ----------------------------------------------------------
 
-----------------------------------------------------------
+
+
 ----------------------------------------------------------
 
 
