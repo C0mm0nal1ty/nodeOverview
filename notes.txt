@@ -43,7 +43,7 @@ Event loop is inside the 1 thread Node uses to run your program.
 The event loop controls what the thread should be doing at any given time.
 
 How to understand the event loop?
-
+Reference loop.js to understand the flow of steps
 
 
 
