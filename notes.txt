@@ -1,0 +1,23 @@
+/*
+What is Node JS?
+*It is a collection of dependencies that are used to run your javascript code.
+*Node is 50% JS and 50% C++
+*Some dependencies are:
+V8 - open source javascript engine by Google.
+-> 70% c++ code
+libuv - 100% c++ code
+*Node provides a series of wrappers (standard library module)
+-> standard modules include http, fs, crypto, path
+
+
+
+
+
+
+
+
+
+
+
+
+*/
