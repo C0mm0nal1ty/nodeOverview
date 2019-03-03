@@ -78,6 +78,43 @@ What functions in node std library use the threadpool?
 How does this threadpool stuff fit into the event loop?
 -tasks running in the threadpool are pendingOperations
 
+----------------------------------------------------------
+How to benchmark the OSoperations?
+-Reference async.js file
+-calling google and measuring the resposne time
+
+Why did all 7 doRequests() complete at the same time???
+-libuv has some functions called OS Async helpers.
+-It delegates these network requests to the operating system.
+-OS handles the async request
+
+----------------------------------------------------------
+Common OS/Async questions
+What functions in node std library use the OS's async features?
+-Almost everything around networking for all Os's.
+- making requests, setting up a port listener, e.g.
+
+How does this os async stuff fit into the event loop?
+-Tasks using the underlying OS are reflected in
+-pending OSTasks array
+
+----------------------------------------------------------
+SUMMARY DIAGRAM OF EVERYTHING
+reference SUMMARY-OVERVIEW PIC
+1. process and execute code in index.js
+2. Check if we still have work to do? Look at timers, OSTasks,
+Threadpool
+If yes? [REPEAT]
+Run set-timeouts,setintervals,
+run callbacks for any ostasks or threadpool tasks
+pause and wait for stuff to happen
+run any setintermmediate functions
+handle close events
+[START AT REPEAT LOOP]
+
+IF NO?
+End program.
+
 
 ----------------------------------------------------------
 
@@ -85,10 +122,11 @@ How does this threadpool stuff fit into the event loop?
 
 ----------------------------------------------------------
 
-
+----------------------------------------------------------
 
 ----------------------------------------------------------
 
+----------------------------------------------------------
 
 
 
