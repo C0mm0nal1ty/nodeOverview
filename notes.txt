@@ -57,6 +57,9 @@ the processing would be linear. HOWEVER, both functions ran
 for the same amount of time. Node on the C++ side uses a thread
 pool.
 
+Why did the 5th pbkdf2 function take 2s more?
+When running the pbkdf2 function more than 5 times, the thread
+pool doesn't have enough thread capacity to run the application.
 
 
 
