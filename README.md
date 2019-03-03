@@ -33,6 +33,12 @@ node -v
 ```
 
 ```
+Express.js
+mkdir performance
+cd performance
+npm init
+**Hit Enter to accept all default prompts.
+npm install --save express
 
 ```
 
