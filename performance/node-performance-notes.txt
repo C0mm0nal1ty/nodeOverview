@@ -1,4 +1,42 @@
+/*
+----------------------------------------------------------
+Node runs a single thread for the event loop.
+Downsides?
+Nothing else can be run while functions,calls are being run in the
+event loop.
 
+What is clustering in theory?
+general definition - group of similar objects
+definition - in clustering, a cluster manager monitors a
+cluster(group) of individual node applications running.
+
+Cluster manager doesn't handle requests; it only monitors
+the health of each individual instance of the node server
+
+What happens when we start using clustering in Node?
+You run node index.js, the index.js is sent to the cluster
+manager, it calls the cluster.fork() to create a worker instance
+then sends it to the worker instance to process.
+
+How does cluster manager decide what to do with the file?
+
+
+----------------------------------------------------------
+
+----------------------------------------------------------
+
+----------------------------------------------------------
+
+----------------------------------------------------------
+
+
+
+
+
+
+
+
+*/
 
 
 //EOF
