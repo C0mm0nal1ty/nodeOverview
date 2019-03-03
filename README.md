@@ -42,6 +42,10 @@ npm install --save express
 
 ```
 
+```
+Apache utilities for benchmarking
+sudo apt install apache2-utils
+```
 Demo
 ```
 
@@ -49,8 +53,21 @@ Demo
 
 ## Running the tests
 
-There are no running tests.
+Benchmark tests in clustering performance
+Apache benchmark
+```
+cd nodeOverview
+cd performance
+node index.js
+ab -c 50 -n 500 localhost:3000/fast
+This will run concurrent 50 tests running
+localhost:3000 express webserver, specifically for page fast
+It will run a total of 500 times
+```
+```
 
+```
+<enter tests>
 ```
 ```
 

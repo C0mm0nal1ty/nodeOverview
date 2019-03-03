@@ -145,6 +145,16 @@ AND RETURNS THOSE.
 
 
 ----------------------------------------------------------
+Clustering?
+It can be used to speed up the retrieval time on pages on your
+web server.
+in clustering, a cluster manager monitors a
+cluster(group) of individual node applications running.
+
+Cluster manager doesn't handle requests; it only monitors
+the health of each individual instance of the node server
+
+Downsides to clustering?
 
 ----------------------------------------------------------
 

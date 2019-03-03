@@ -19,6 +19,32 @@ manager, it calls the cluster.fork() to create a worker instance
 then sends it to the worker instance to process.
 
 How does cluster manager decide what to do with the file?
+It forks a child instance to handle the node instance,
+then run the index code.
+
+----------------------------------------------------------
+Implementing a cluster.
+Use the cluster.fork() to manage instances of a node running.
+In index.js, the cluster manager forks a child instance.
+If there are 4 fork calls, 4 instances are spun to handle the requests
+coming in.
+
+----------------------------------------------------------
+Benchmarking the app before clustering?
+First, we need to benchmark performance.
+Follow the tests in the README.md file to benchmark using the
+apache utilities
+
+Downside to clustering?
+Clustering stretches the performance of CPU to thin. By
+the CPU having to address ALL the results SIMULTANEOUSLY,
+it caused a performance cost.
+THE MORE CHILDS, THE LONGER THE RESPONSE TIME.
+
+FIND THE BALANCE IN BETWEEN WITH NOT TOO MANY CHILDS
+AND NOT TOO LESS.
+
+----------------------------------------------------------
 
 
 ----------------------------------------------------------
@@ -29,7 +55,7 @@ How does cluster manager decide what to do with the file?
 
 ----------------------------------------------------------
 
-
+----------------------------------------------------------
 
 
 
