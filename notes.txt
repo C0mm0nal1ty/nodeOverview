@@ -119,6 +119,14 @@ End program.
 ----------------------------------------------------------
 Crazy Node behavior
 Interview question?
+Based on the multitasks.js, how will the order of the console
+logs appear?
+Only output the 4 hash values.
+RESULT - https response, hashes and return of filesystem read
+filesystem takes 2 seconds longer to run.
+
+
+UNEXPECTED EVENT LOOPS
 
 
 

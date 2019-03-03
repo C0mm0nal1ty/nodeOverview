@@ -18,5 +18,15 @@ crypto.pbkdf2('a','b',100000,512,'sha512',() => {
 });
 }
 
+doRequest();
+
+fs.readFile('muiltitask.js', 'utf8', () => {
+  console.log('FS:', Date.now() - start);
+})
+
+// doHash();
+// doHash();
+// doHash();
+// doHash();
 //EOF
 //EOF
