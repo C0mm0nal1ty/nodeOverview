@@ -127,7 +127,21 @@ filesystem takes 2 seconds longer to run.
 
 
 UNEXPECTED EVENT LOOPS
+Remember that the fs module and crypto module uses the
+thread pool?
+Remember that the OS manages the HTTPS request?
 
+What happens on fs call?
+We call fs.readFile. Node gets stats on file,
+hd access, stats returned, node requests to read the file,
+hd access, file contents streamed back, node returns file
+contents to us
+
+THE REASON WHY THE HASHES ARE RETURNED IS BECAUSE THE
+THREAD IS USED TO FIRST ASSIGNED TO READ THE FILE,
+BUT IN THE SPARE TIME, IT PROCESSES THE HASH.
+AFTER THE HASH IS RETURNED, IT PICKS UP THE FILE STATS
+AND RETURNS THOSE.
 
 
 ----------------------------------------------------------
