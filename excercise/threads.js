@@ -14,6 +14,10 @@ and 4 in the thread pool.
 
 
 */
+//this will make the threadpool size for 2.
+process.env.UV_THREADPOOL_SIZE = 5;
+
+
 const crypto = require('crypto');
 
 const start = Date.now();

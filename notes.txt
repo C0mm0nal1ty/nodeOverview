@@ -60,9 +60,28 @@ pool.
 Why did the 5th pbkdf2 function take 2s more?
 When running the pbkdf2 function more than 5 times, the thread
 pool doesn't have enough thread capacity to run the application.
+----------------------------------------------------------
+How do I change the thread pool size?
+process.env.UV_THREADPOOL_SIZE = 2;
+This command will change the threadpool size to 2.
 
 
+Can we use the threadpool for javascript code
+or can only nodejs functions use it?
+-We can write custom JS that uses the threadpool.
 
+What functions in node std library use the threadpool?
+-All fs(filesystem) module functions. some crypto stuff
+- all depends on the OS
+
+
+How does this threadpool stuff fit into the event loop?
+-tasks running in the threadpool are pendingOperations
+
+
+----------------------------------------------------------
+
+----------------------------------------------------------
 
 ----------------------------------------------------------
 
