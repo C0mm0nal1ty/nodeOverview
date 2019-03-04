@@ -54,6 +54,18 @@ npm install --save webworker-threads
 ```
 
 ```
+Install Stephen Grider starter project
+mkdir dataCaching
+cd dataCaching
+git clone https://github.com/StephenGrider/AdvancedNodeStarter
+
+```
+
+```
+
+```
+
+```
 
 ```
 
