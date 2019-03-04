@@ -163,8 +163,20 @@ get the benefits of clustering
 Library with the best cluster manager AKA load balancer?
 PM2 - https://github.com/Unitech/pm2
 
-
 ----------------------------------------------------------
+Node performance with worker threads?
+Worker threads are still an experimental feature.
+Worker threads use a threadpool.
+
+How does worker threads work?
+In our single thread in the event loop. the worker threads
+package will manage a worker interface. It will offload
+calculations to a worker through a postmessage and an onmessage.
+
+Our App
+-> worker interface (communicates with postMessage and onmessage)
+-> worker, that communicates with worker interface (
+again with postMessage and onmessage
 
 ----------------------------------------------------------
 

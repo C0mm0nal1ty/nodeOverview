@@ -48,8 +48,9 @@ sudo apt install apache2-utils
 ```
 
 ```
-Install PM2
+Install these in the performance folder.
 npm install -g pm2
+npm install --save webworker-threads
 ```
 
 ```
@@ -128,6 +129,7 @@ Add additional notes about how to deploy this on a live system
 
 * [Node.js](https://nodejs.org/en/) - JavaScript runtime
 * [Express.js](https://expressjs.com/) - Fast, unopinionated, minimalist web framework
+* [PM2](https://github.com/Unitech/pm2) - Node.js Production Process Manager with a built-in Load Balancer.
 
 ## Contributing
 
