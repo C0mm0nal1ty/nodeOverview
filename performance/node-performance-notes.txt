@@ -45,7 +45,11 @@ FIND THE BALANCE IN BETWEEN WITH NOT TOO MANY CHILDS
 AND NOT TOO LESS.
 
 ----------------------------------------------------------
+Library with the best cluster manager AKA load balancer?
+PM2 - https://github.com/Unitech/pm2
 
+Piece of software used in production deployments. It will
+manage child instances that crash.
 
 ----------------------------------------------------------
 

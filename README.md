@@ -46,6 +46,16 @@ npm install --save express
 Apache utilities for benchmarking
 sudo apt install apache2-utils
 ```
+
+```
+Install PM2
+npm install -g pm2
+```
+
+```
+
+```
+
 Demo
 ```
 

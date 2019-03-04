@@ -155,6 +155,14 @@ Cluster manager doesn't handle requests; it only monitors
 the health of each individual instance of the node server
 
 Downsides to clustering?
+too little child and performance goes down
+too many childs and performance goes down.
+must find a balance of forked child instances to
+get the benefits of clustering
+
+Library with the best cluster manager AKA load balancer?
+PM2 - https://github.com/Unitech/pm2
+
 
 ----------------------------------------------------------
 
