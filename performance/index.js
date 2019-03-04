@@ -1,5 +1,13 @@
 //Creating a tiny express server.
 //New file that will delegate clustering to pm2
+//Command to run this index.js
+// pm2 start index.js -i 0
+//command to kill an instance
+// pm2 delete index
+//show all instances
+// pm2 show list
+//monitor all indexes
+// pm2 monit
 const crypto = require('crypto');
 const express = require('express');
 const app = express();

@@ -70,10 +70,35 @@ cd nodeOverview
 cd performance
 node index.js
 ab -c 50 -n 500 localhost:3000/fast
+
 This will run concurrent 50 tests running
 localhost:3000 express webserver, specifically for page fast
 It will run a total of 500 times
 ```
+```
+Running pm2 load-balancer
+
+pm2 start index.js -i 0
+
+It will start index.js with an instance count of 0. This means pm will handle how many instances to spin up.
+
+pm2 delete <instance-name>
+Ex. pm2 delete index.js
+this will delete the running instance of index.js
+
+pm2 show list
+show all instances
+
+pm2 monit
+monitor all indexes
+
+
+```
+
+```
+
+```
+
 ```
 
 ```
