@@ -93,8 +93,11 @@ show all instances
 pm2 monit
 monitor all indexes
 
-
 ```
+Using index.js, benchmark the worker-threads implementation
+ab -c 1 -n 1 localhost:3000/
+ab -c 6 -n 6 localhost:3000/
+
 
 ```
 

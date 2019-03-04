@@ -9,19 +9,20 @@ const Worker = require('webworker-threads').Worker;
 app.get('/', (req, res) => {
   //create interface
   const worker = new Worker(function() {
-    this.onmessage() = function() {
+    this.onmessage = function() {
       let counter = 0;
-
       while(counter < 1e9){
         counter++;
       }
-      postMessage();
-    }
+      postMessage(counter);
+    };
   });
 
   //handles any callbacks from the worker thread
-  worker.onmessage = function() {
-
+  //this resides in the worker interface
+  worker.onmessage = function(myCounter) {
+    console.log(myCounter.data);
+    res.send('' + myCounter.data);
   };
 
   //
