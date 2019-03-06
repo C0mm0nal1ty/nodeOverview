@@ -18,6 +18,12 @@ Running Ubuntu 18.04 Bionic Beaver standard image
 Visit ubuntu.com to get the latest image.
 Google how to install the iso.
 (iso on USB through UniversalUSB installer works.)
+
+
+Sign up for mondogb Atlas account to use the DaaS(mongoDB).
+(https://cloud.mongodb.com)
+Follow the checklist to get started with the site.
+
 ```
 
 ### Installing
